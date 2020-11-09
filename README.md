@@ -1,0 +1,2 @@
+# MyPlaces
+training project
