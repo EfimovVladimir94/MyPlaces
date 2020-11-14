@@ -14,6 +14,8 @@
 		CE172BA8255931ED004A660A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE172BA6255931ED004A660A /* LaunchScreen.storyboard */; };
 		CE172BB225593FC9004A660A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE172BB125593FC9004A660A /* MainViewController.swift */; };
 		CE172BB62559C567004A660A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE172BB52559C566004A660A /* CustomTableViewCell.swift */; };
+		CE172BBA255D8CC4004A660A /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE172BB9255D8CC4004A660A /* PlaceModel.swift */; };
+		CE172BBE255EF19E004A660A /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE172BBD255EF19E004A660A /* NewPlaceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		CE172BA9255931ED004A660A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE172BB125593FC9004A660A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CE172BB52559C566004A660A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		CE172BB9255D8CC4004A660A /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		CE172BBD255EF19E004A660A /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +62,12 @@
 		CE172B9A255931EC004A660A /* MyPlaces */ = {
 			isa = PBXGroup;
 			children = (
+				CE172BB9255D8CC4004A660A /* PlaceModel.swift */,
 				CE172B9B255931EC004A660A /* AppDelegate.swift */,
 				CE172B9D255931EC004A660A /* SceneDelegate.swift */,
 				CE172BB125593FC9004A660A /* MainViewController.swift */,
 				CE172BB52559C566004A660A /* CustomTableViewCell.swift */,
+				CE172BBD255EF19E004A660A /* NewPlaceViewController.swift */,
 				CE172BA1255931EC004A660A /* Main.storyboard */,
 				CE172BA4255931ED004A660A /* Assets.xcassets */,
 				CE172BA6255931ED004A660A /* LaunchScreen.storyboard */,
@@ -141,7 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE172BB225593FC9004A660A /* MainViewController.swift in Sources */,
+				CE172BBE255EF19E004A660A /* NewPlaceViewController.swift in Sources */,
 				CE172B9C255931EC004A660A /* AppDelegate.swift in Sources */,
+				CE172BBA255D8CC4004A660A /* PlaceModel.swift in Sources */,
 				CE172BB62559C567004A660A /* CustomTableViewCell.swift in Sources */,
 				CE172B9E255931EC004A660A /* SceneDelegate.swift in Sources */,
 			);
