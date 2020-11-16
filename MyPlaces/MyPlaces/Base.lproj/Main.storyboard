@@ -243,7 +243,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="7zD-CZ-XpD">
                             <connections>
-                                <segue destination="2tX-QE-Al3" kind="unwind" unwindAction="unwinndSeque:" id="xaG-X7-8po"/>
+                                <segue destination="2tX-QE-Al3" kind="unwind" unwindAction="unwindSegue:" id="1Ik-nG-jJ2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

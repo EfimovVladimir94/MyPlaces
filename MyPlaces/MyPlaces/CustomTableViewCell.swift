@@ -2,21 +2,18 @@
 //  CustomTableViewCell.swift
 //  MyPlaces
 //
-//  Created by Пользователь on 09.11.2020.
+//  Created by Alexey Efimov on 14/11/2018.
+//  Copyright © 2018 Alexey Efimov. All rights reserved.
 //
 
 import UIKit
 
 class CustomTableViewCell: UITableViewCell {
+
+    @IBOutlet var imageOfPlace: UIImageView!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var locationLabel: UILabel!
+    @IBOutlet var typeLabel: UILabel!
     
-    @IBOutlet weak var imageOfPlace: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var typeLabel: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
 
 }
