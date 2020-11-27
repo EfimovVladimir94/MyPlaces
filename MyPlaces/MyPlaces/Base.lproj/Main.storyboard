@@ -146,6 +146,23 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="75" id="GH5-ly-oQl">
+                                        <rect key="frame" x="0.0" y="503" width="414" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GH5-ly-oQl" id="ORQ-vO-TKG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="SVJ-SV-tcI" customClass="RatingControl" customModule="MyPlaces" customModuleProvider="target">
+                                                    <rect key="frame" x="97" y="15.5" width="220" height="44"/>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SVJ-SV-tcI" firstAttribute="centerX" secondItem="ORQ-vO-TKG" secondAttribute="centerX" id="0sX-11-Cyu"/>
+                                                <constraint firstItem="SVJ-SV-tcI" firstAttribute="centerY" secondItem="ORQ-vO-TKG" secondAttribute="centerY" id="kdf-Cg-E4Q"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -177,7 +194,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="waD-6q-P7H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="2tX-QE-Al3" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="290" y="219"/>
+            <point key="canvasLocation" x="289.85507246376812" y="218.97321428571428"/>
         </scene>
         <!--My Places-->
         <scene sceneID="Lou-sY-63N">
@@ -188,7 +205,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ma4-rM-7qM">
-                                <rect key="frame" x="0.0" y="88" width="414" height="39"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="809"/>
                                 <segments>
                                     <segment title="Date"/>
                                     <segment title="Name"/>
@@ -269,7 +286,7 @@
                         <constraints>
                             <constraint firstItem="Ma4-rM-7qM" firstAttribute="top" secondItem="kV4-1a-k7v" secondAttribute="top" id="Yhh-Gj-cVk"/>
                             <constraint firstItem="Ma4-rM-7qM" firstAttribute="leading" secondItem="kV4-1a-k7v" secondAttribute="leading" id="c0J-Qe-SIs"/>
-                            <constraint firstItem="vsm-3o-uMM" firstAttribute="top" secondItem="Ma4-rM-7qM" secondAttribute="bottom" constant="1" id="uG9-tu-hPW"/>
+                            <constraint firstItem="vsm-3o-uMM" firstAttribute="bottom" secondItem="Ma4-rM-7qM" secondAttribute="bottom" id="uG9-tu-hPW"/>
                             <constraint firstItem="kV4-1a-k7v" firstAttribute="trailing" secondItem="Ma4-rM-7qM" secondAttribute="trailing" id="y36-lx-oXd"/>
                         </constraints>
                     </view>
