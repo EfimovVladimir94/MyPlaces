@@ -70,11 +70,11 @@ class NewPlaceViewController: UITableViewController {
     
     // MARK: Navifation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier != "showMap" {
-            return
-        }
+        if segue.identifier != "showMap" { return }
         let mapVC = segue.destination as! MapViewController
-        mapVC.place = currentPlace
+        mapVC.place.name = placeName.text!
+        mapVC.place.location = placeLocation.text
+        mapVC.place.imageData = placeImage.image?.pngData()
     }
     
     func savePlace() {
@@ -180,7 +180,5 @@ extension NewPlaceViewController: UIImagePickerControllerDelegate, UINavigationC
         imageIsChanged = true
         
         dismiss(animated: true)
-    }
-    
-    
+    } 
 }
