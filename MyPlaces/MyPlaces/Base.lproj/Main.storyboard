@@ -232,14 +232,31 @@
                                     <action selector="closeVC" destination="Ccc-Ak-qKe" eventType="touchUpInside" id="c6N-Gv-wzu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tps-0o-p0F">
+                                <rect key="frame" x="324" y="718" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cwf-Y7-Kmi"/>
+                                    <constraint firstAttribute="width" constant="50" id="lbO-DQ-gfx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" image="location.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50" scale="large" weight="medium"/>
+                                </state>
+                                <connections>
+                                    <action selector="centerViewInUserLocation" destination="Ccc-Ak-qKe" eventType="touchUpInside" id="sOS-He-jgO"/>
+                                    <action selector="centerViewInUserLocation:" destination="Ccc-Ak-qKe" eventType="touchUpInside" id="0nb-wi-nia"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f9L-Lw-u2G"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="pwl-FA-iWr" firstAttribute="top" secondItem="u5J-7k-g1Y" secondAttribute="top" id="KX6-Cz-Kqw"/>
                             <constraint firstItem="Geb-sk-xaU" firstAttribute="top" secondItem="f9L-Lw-u2G" secondAttribute="top" constant="40" id="LOD-zi-ZDV"/>
+                            <constraint firstItem="f9L-Lw-u2G" firstAttribute="trailing" secondItem="Tps-0o-p0F" secondAttribute="trailing" constant="40" id="MSx-QN-LRh"/>
                             <constraint firstItem="pwl-FA-iWr" firstAttribute="leading" secondItem="f9L-Lw-u2G" secondAttribute="leading" id="Poi-KE-aAe"/>
                             <constraint firstItem="pwl-FA-iWr" firstAttribute="trailing" secondItem="f9L-Lw-u2G" secondAttribute="trailing" id="eXE-xs-BEQ"/>
+                            <constraint firstItem="f9L-Lw-u2G" firstAttribute="bottom" secondItem="Tps-0o-p0F" secondAttribute="bottom" constant="40" id="hSu-2d-93K"/>
                             <constraint firstAttribute="bottom" secondItem="pwl-FA-iWr" secondAttribute="bottom" id="u03-SA-RZT"/>
                             <constraint firstItem="f9L-Lw-u2G" firstAttribute="trailing" secondItem="Geb-sk-xaU" secondAttribute="trailing" constant="40" id="zax-7I-Oa5"/>
                         </constraints>
@@ -409,6 +426,7 @@
     <resources>
         <image name="AZ" width="25" height="24"/>
         <image name="camcel" width="128" height="128"/>
+        <image name="location.circle" catalog="system" width="128" height="121"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
