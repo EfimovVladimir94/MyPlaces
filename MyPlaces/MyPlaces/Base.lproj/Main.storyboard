@@ -284,10 +284,22 @@
                                     <action selector="centerViewInUserLocation:" destination="Ccc-Ak-qKe" eventType="touchUpInside" id="0nb-wi-nia"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mt1-YN-KRR">
+                                <rect key="frame" x="182" y="718" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2TA-Rz-O9j"/>
+                                    <constraint firstAttribute="width" constant="50" id="BqW-ys-nxJ"/>
+                                </constraints>
+                                <state key="normal" image="GetDirection"/>
+                                <connections>
+                                    <action selector="goButtonPressed:" destination="Ccc-Ak-qKe" eventType="touchUpInside" id="gc2-sQ-7j5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f9L-Lw-u2G"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="f9L-Lw-u2G" firstAttribute="bottom" secondItem="mt1-YN-KRR" secondAttribute="bottom" constant="40" id="1Gb-Rp-sAs"/>
                             <constraint firstItem="f9L-Lw-u2G" firstAttribute="trailing" secondItem="Tps-0o-p0F" secondAttribute="trailing" constant="60" id="6xL-Es-Uxv"/>
                             <constraint firstItem="Z5d-9N-Dwq" firstAttribute="leading" secondItem="f9L-Lw-u2G" secondAttribute="leading" constant="110" id="Bij-Ng-vQp"/>
                             <constraint firstItem="sxl-eI-Ez8" firstAttribute="centerX" secondItem="u5J-7k-g1Y" secondAttribute="centerX" id="HPq-oi-TsS"/>
@@ -301,6 +313,7 @@
                             <constraint firstItem="f9L-Lw-u2G" firstAttribute="bottom" secondItem="sxl-eI-Ez8" secondAttribute="bottom" constant="40" id="giT-x5-FxA"/>
                             <constraint firstItem="VB4-An-0aA" firstAttribute="centerY" secondItem="u5J-7k-g1Y" secondAttribute="centerY" constant="-20" id="m6C-1c-8TW"/>
                             <constraint firstItem="pwl-FA-iWr" firstAttribute="top" secondItem="Z5d-9N-Dwq" secondAttribute="bottom" constant="-193" id="qHA-RR-E8v"/>
+                            <constraint firstItem="mt1-YN-KRR" firstAttribute="centerX" secondItem="u5J-7k-g1Y" secondAttribute="centerX" id="tHx-Zt-FIc"/>
                             <constraint firstAttribute="bottom" secondItem="pwl-FA-iWr" secondAttribute="bottom" id="u03-SA-RZT"/>
                             <constraint firstItem="f9L-Lw-u2G" firstAttribute="trailing" secondItem="Geb-sk-xaU" secondAttribute="trailing" constant="40" id="zax-7I-Oa5"/>
                         </constraints>
@@ -308,6 +321,7 @@
                     <connections>
                         <outlet property="addressLabel" destination="Z5d-9N-Dwq" id="gmh-Uu-dnt"/>
                         <outlet property="doneButton" destination="sxl-eI-Ez8" id="Y9Q-YE-pAd"/>
+                        <outlet property="goButton" destination="mt1-YN-KRR" id="Q6z-ce-E8Q"/>
                         <outlet property="mapPinImage" destination="VB4-An-0aA" id="b11-Th-x4c"/>
                         <outlet property="mapView" destination="pwl-FA-iWr" id="Nw7-88-3sn"/>
                     </connections>
@@ -473,6 +487,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="AZ" width="25" height="24"/>
+        <image name="GetDirection" width="50" height="50"/>
         <image name="camcel" width="128" height="128"/>
         <image name="location.circle" catalog="system" width="128" height="121"/>
         <image name="map" catalog="system" width="128" height="110"/>
