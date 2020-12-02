@@ -19,6 +19,7 @@
 		CE172BBE255EF19E004A660A /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE172BBD255EF19E004A660A /* NewPlaceViewController.swift */; };
 		CE8D34072568868A00A997A4 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D34062568868A00A997A4 /* RatingControl.swift */; };
 		CE9A5FF7256333C000C062DD /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A5FF6256333C000C062DD /* StorageManager.swift */; };
+		CEA77A7E2577F8CA0068C218 /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA77A7D2577F8CA0068C218 /* MapManager.swift */; };
 		CEEDED3D2573CAFD00AE2157 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEDED3C2573CAFD00AE2157 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		CE172BBD255EF19E004A660A /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 		CE8D34062568868A00A997A4 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		CE9A5FF6256333C000C062DD /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		CEA77A7D2577F8CA0068C218 /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
 		CEEDED3C2573CAFD00AE2157 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,21 +86,62 @@
 		CE172B9A255931EC004A660A /* MyPlaces */ = {
 			isa = PBXGroup;
 			children = (
-				CE172BB9255D8CC4004A660A /* PlaceModel.swift */,
-				CE172B9B255931EC004A660A /* AppDelegate.swift */,
-				CE172B9D255931EC004A660A /* SceneDelegate.swift */,
-				CE9A5FF6256333C000C062DD /* StorageManager.swift */,
-				CE172BB125593FC9004A660A /* MainViewController.swift */,
-				CE172BB52559C566004A660A /* CustomTableViewCell.swift */,
-				CE8D34062568868A00A997A4 /* RatingControl.swift */,
-				CE172BBD255EF19E004A660A /* NewPlaceViewController.swift */,
-				CEEDED3C2573CAFD00AE2157 /* MapViewController.swift */,
-				CE172BA1255931EC004A660A /* Main.storyboard */,
-				CE172BA4255931ED004A660A /* Assets.xcassets */,
-				CE172BA6255931ED004A660A /* LaunchScreen.storyboard */,
-				CE172BA9255931ED004A660A /* Info.plist */,
+				CEA77A802577FC7A0068C218 /* controllers */,
+				CEA77A822577FCAB0068C218 /* utils */,
+				CEA77A812577FC9F0068C218 /* models */,
+				CEA77A832577FCC60068C218 /* supports */,
+				CEA77A842577FCE00068C218 /* iBuilder */,
 			);
 			path = MyPlaces;
+			sourceTree = "<group>";
+		};
+		CEA77A802577FC7A0068C218 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE172BB125593FC9004A660A /* MainViewController.swift */,
+				CE172BB52559C566004A660A /* CustomTableViewCell.swift */,
+				CE172BBD255EF19E004A660A /* NewPlaceViewController.swift */,
+				CEEDED3C2573CAFD00AE2157 /* MapViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		CEA77A812577FC9F0068C218 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				CE172BB9255D8CC4004A660A /* PlaceModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		CEA77A822577FCAB0068C218 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				CE9A5FF6256333C000C062DD /* StorageManager.swift */,
+				CE8D34062568868A00A997A4 /* RatingControl.swift */,
+				CEA77A7D2577F8CA0068C218 /* MapManager.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		CEA77A832577FCC60068C218 /* supports */ = {
+			isa = PBXGroup;
+			children = (
+				CE172B9B255931EC004A660A /* AppDelegate.swift */,
+				CE172B9D255931EC004A660A /* SceneDelegate.swift */,
+				CE172BA4255931ED004A660A /* Assets.xcassets */,
+				CE172BA9255931ED004A660A /* Info.plist */,
+			);
+			path = supports;
+			sourceTree = "<group>";
+		};
+		CEA77A842577FCE00068C218 /* iBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				CE172BA1255931EC004A660A /* Main.storyboard */,
+				CE172BA6255931ED004A660A /* LaunchScreen.storyboard */,
+			);
+			path = iBuilder;
 			sourceTree = "<group>";
 		};
 		E5FEB2F99B0E0C8350BF16D4 /* Frameworks */ = {
@@ -229,6 +272,7 @@
 				CE9A5FF7256333C000C062DD /* StorageManager.swift in Sources */,
 				CEEDED3D2573CAFD00AE2157 /* MapViewController.swift in Sources */,
 				CE8D34072568868A00A997A4 /* RatingControl.swift in Sources */,
+				CEA77A7E2577F8CA0068C218 /* MapManager.swift in Sources */,
 				CE172BBA255D8CC4004A660A /* PlaceModel.swift in Sources */,
 				CE172BB62559C567004A660A /* CustomTableViewCell.swift in Sources */,
 				CE172B9E255931EC004A660A /* SceneDelegate.swift in Sources */,
@@ -381,7 +425,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U8RYS8TVG9;
-				INFOPLIST_FILE = MyPlaces/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyPlaces/supports/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -401,7 +445,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U8RYS8TVG9;
-				INFOPLIST_FILE = MyPlaces/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MyPlaces/supports/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
